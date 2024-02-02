@@ -1,0 +1,31 @@
+#A{
+    display:flex;
+    flex-direction:row;
+    margin: -8px;
+    /* justify-content: space-evenly; */
+
+    background-image: url('picture/senior.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+.background-color{
+    
+    margin-top: -5px;
+}
+h2{
+    margin-top: -5px;
+}
+#i3{
+    padding-bottom: 49px;
+}
+/* #A1{
+    flex:1;
+}
+#A2{
+    flex:1;
+}
+#A3{
+    flex:1;
+} */

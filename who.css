@@ -1,0 +1,12 @@
+#A{
+    background-image: url('picture/who.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+
+    padding-bottom: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: -8px;
+}

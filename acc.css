@@ -1,0 +1,27 @@
+#A{
+    background-image: url('picture/acc.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    margin: -8px;
+}
+
+.left{
+    float: left;
+    width: 500px;
+}
+.right{
+    float: right;
+    width: 500px;
+}
+h1{
+    color: gold;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    margin-top: 250px;
+}

@@ -1,0 +1,35 @@
+#A{
+    background-image: url('picture/all.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+.B{
+    display:flex;
+    flex-direction:row;
+    height:max-content;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    /* background-color: antiquewhite; */
+    margin: -7px;
+}
+.c{
+    overflow: 0.5;
+    width: max-content;
+    justify-content:center;
+    text-align:center;
+}
+#i1{
+    flex:1;
+    
+}
+#i2{
+    flex:2; 
+}
+#i3{
+    flex:3;
+}
+#i4{
+    flex:4;
+}

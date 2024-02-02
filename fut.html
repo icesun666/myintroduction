@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自我介紹</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #result {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>猜數字遊戲</h1>
+  <p>請輸入一個介於 1 到 100 之間的數字：</p>
+
+  <input type="number" id="guess" min="1" max="100">
+  <button onclick="checkGuess()">猜!</button>
+
+  <div id="result"></div>
+
+  <script>
+    // 生成1到100之間的隨機數字
+    const targetNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    function checkGuess() {
+      const guessInput = document.getElementById('guess');
+      const resultDiv = document.getElementById('result');
+      const guess = parseInt(guessInput.value);
+
+      if (isNaN(guess) || guess < 1 || guess > 100) {
+        resultDiv.textContent = '請輸入有效的數字（1到100之間）';
+      } else {
+        attempts++;
+
+        if (guess === targetNumber) {
+          resultDiv.textContent = `恭喜你猜對了！總共嘗試了 ${attempts} 次。`;
+          resultDiv.style.color = 'green';
+          guessInput.disabled = true;
+        } else {
+          const hint = guess < targetNumber ? '太小了！' : '太大了！';
+          resultDiv.textContent = `猜錯了，${hint} 繼續努力。已嘗試 ${attempts} 次。`;
+          resultDiv.style.color = 'red';
+        }
+      }
+    }
+  </script>
+    <a href="all.html">Back</a>
+</body>
+</html>

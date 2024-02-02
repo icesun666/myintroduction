@@ -1,0 +1,13 @@
+#startScreen{
+    justify-content:center;
+    align-content:center;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 400px;
+    float: left;
+}
+#disappearButton{
+    display: none;
+}
