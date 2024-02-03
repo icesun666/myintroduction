@@ -84,6 +84,7 @@ function changeScreen(){
     setTimeout(function() {
         document.getElementById('disappearButton').style.display = 'block';
       }, 10000);
+    gameScreen.innerHTML += "<a href='all.html'>Back 點擊以重開</a>";
 
     
     // console.log(setnum);
